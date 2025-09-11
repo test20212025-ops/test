@@ -1,0 +1,74 @@
+[npa-publisher:2025-08-21 05:23:00.339 +00:00] [info] main.cpp:141:main():0x0 Agent version 124.0.0.9304 was started.
+[npa-publisher:2025-08-21 05:23:00.344 +00:00] [warning] policy.cpp:650:buildImpl():0x7fd186d0a000 Json parse error Empty: no JSON found
+[npa-publisher:2025-08-21 05:23:00.344 +00:00] [info] policy.cpp:627:buildTimed():0x7fd186d0a000 SRP version 0 built in 0 ms, 0 bytes, tenant [], user [], #HostRules 0 #DomainRules 0 #SubnetRules 0.
+[npa-publisher:2025-08-21 05:23:00.354 +00:00] [warning] tundevice.cpp:127:openDevice():0x0 ** TUN opened: tun0
+
+[npa-publisher:2025-08-21 05:23:00.389 +00:00] [error] snat.cpp:674:getIptablesCmd():0x7fd186cee060 IPTABLES_CMD is empty, use iptables-legacy as default
+[npa-publisher:2025-08-21 05:23:00.513 +00:00] [info] snat.cpp:131:initMasquerade():0x7fd186d32000 Finished iptables setup using iptables-legacy
+[npa-publisher:2025-08-21 05:23:00.513 +00:00] [info] agenthandler.cpp:430:initGSLBClient():0x0 GSLB service host: gateway.gslb.goskope.com, numDP: 8
+[npa-publisher:2025-08-21 05:23:00.532 +00:00] [info] dispatcherEpoll.cpp:185:startDispatchSync():0x7fd186c2b000 Start Dispatcher 0x0x7fd186c2b000 Sync (Beta1).
+[npa-publisher:2025-08-21 05:23:00.633 +00:00] [info] agenthandler.cpp:526:refreshAndConnect():0x7fd186c37500 Launching discovery
+[npa-publisher:2025-08-21 05:23:00.633 +00:00] [info] process_runner.cpp:26:start():0x7fd186c5d570 Starting commands './npa_publisher_wizard -discoveryrefresh'
+[npa-publisher:2025-08-21 05:23:01.091 +00:00] [info] process_runner.cpp:74:handleClose():0x7fd186c5d570 Process execution is complete
+[npa-publisher:2025-08-21 05:23:02.523 +00:00] [info] GSLBConnector.cpp:507:sendRequestInternal():0x7fd186d06200 Sent request to https://gateway.gslb.goskope.com/api/v0.2/npa/footprint/<masked>?scope_id=npa&service=stitcher&limit=8 and got response: HTTP 200
+[npa-publisher:2025-08-21 05:23:02.528 +00:00] [info] GSLBClient.cpp:53:parseGSLBGetResult():0x7fd186c45dc0 GSLB Result: {"egress_ip":"119.226.50.147","request_id":"iyJt_EPtBd_n6Y-WQXUNE","scope":"npa","version":"51cac","rtt_protocol":"http","client_country":"IN","pops":[{"name":"IN-DEL1","distance":2.7562153446999997,"rtt_endpoints":[{"ip":"163.116.199.55","port":443,"scheme":"http","path":"/"},{"ip":"163.116.199.61","port":443,"scheme":"http","path":"/"}],"country":"IN","country_name":"India","in_country":true,"npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_fqdn":"stitcher.npa.goskope.com","npa_gateway_ip":"163.116.199.108","npa_stitcher_ip":"163.116.199.141"},{"name":"IN-DEL2","distance":9.678449219789,"rtt_endpoints":[{"ip":"163.116.212.31","port":443,"scheme":"http","path":"/"},{"ip":"163.116.212.32","port":443,"scheme":"http","path":"/"}],"country":"IN","country_name":"India","in_country":true,"npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_fqdn":"stitcher.npa.goskope.com","npa_gateway_ip":"163.116.212.89","npa_stitcher_ip":"163.116.212.22"},{"name":"IN-BOM1","distance":703.251794430626,"rtt_endpoints":[{"ip":"163.116.205.72","port":443,"scheme":"http","path":"/"},{"ip":"163.116.205.73","port":443,"scheme":"http","path":"/"}],"country":"IN","country_name":"India","in_country":true,"npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_fqdn":"stitcher.npa.goskope.com","npa_gateway_ip":"163.116.205.77","npa_stitcher_ip":"163.116.205.162"},{"name":"IN-BOM2","distance":708.4508149081911,"rtt_endpoints":[{"ip":"163.116.213.31","port":443,"scheme":"http","path":"/"},{"ip":"163.116.213.32","port":443,"scheme":"http","path":"/"}],"country":"IN","country_name":"India","in_country":true,"npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_fqdn":"stitcher.npa.goskope.com","npa_gateway_ip":"163.116.213.100","npa_stitcher_ip":"163.116.213.121"},{"name":"IN-HYD1","distance":780.2413141774861,"rtt_endpoints":[{"ip":"163.116.219.45","port":443,"scheme":"http","path":"/"},{"ip":"163.116.219.50","port":443,"scheme":"http","path":"/"}],"c
+[npa-publisher:2025-08-21 05:23:02.534 +00:00] [info] socket_tools.cpp:228:connectWithTimeOut():0x0 SO_ERROR value 0 (Success), fd: 16
+[npa-publisher:2025-08-21 05:23:02.534 +00:00] [info] GSLBClient.cpp:581:operator()():0x7fd186c45dc0 GSLB: pop: IN-DEL1 RTT endpoint ip 163.116.199.55 port 443: rtt => 2
+[npa-publisher:2025-08-21 05:23:02.536 +00:00] [info] socket_tools.cpp:228:connectWithTimeOut():0x0 SO_ERROR value 0 (Success), fd: 16
+[npa-publisher:2025-08-21 05:23:02.536 +00:00] [info] GSLBClient.cpp:581:operator()():0x7fd186c45dc0 GSLB: pop: IN-DEL2 RTT endpoint ip 163.116.212.31 port 443: rtt => 1
+[npa-publisher:2025-08-21 05:23:02.560 +00:00] [info] socket_tools.cpp:228:connectWithTimeOut():0x0 SO_ERROR value 0 (Success), fd: 15
+[npa-publisher:2025-08-21 05:23:02.560 +00:00] [info] GSLBClient.cpp:581:operator()():0x7fd186c45dc0 GSLB: pop: IN-CCU1 RTT endpoint ip 163.116.196.48 port 443: rtt => 28
+[npa-publisher:2025-08-21 05:23:02.565 +00:00] [info] socket_tools.cpp:228:connectWithTimeOut():0x0 SO_ERROR value 0 (Success), fd: 16
+[npa-publisher:2025-08-21 05:23:02.566 +00:00] [info] GSLBClient.cpp:581:operator()():0x7fd186c45dc0 GSLB: pop: IN-BOM1 RTT endpoint ip 163.116.205.72 port 443: rtt => 29
+[npa-publisher:2025-08-21 05:23:02.593 +00:00] [info] socket_tools.cpp:228:connectWithTimeOut():0x0 SO_ERROR value 0 (Success), fd: 15
+[npa-publisher:2025-08-21 05:23:02.593 +00:00] [info] GSLBClient.cpp:581:operator()():0x7fd186c45dc0 GSLB: pop: IN-MAA2 RTT endpoint ip 163.116.214.29 port 443: rtt => 33
+[npa-publisher:2025-08-21 05:23:02.596 +00:00] [info] socket_tools.cpp:228:connectWithTimeOut():0x0 SO_ERROR value 0 (Success), fd: 16
+[npa-publisher:2025-08-21 05:23:02.597 +00:00] [info] GSLBClient.cpp:581:operator()():0x7fd186c45dc0 GSLB: pop: IN-BOM2 RTT endpoint ip 163.116.213.31 port 443: rtt => 30
+[npa-publisher:2025-08-21 05:23:02.630 +00:00] [info] socket_tools.cpp:228:connectWithTimeOut():0x0 SO_ERROR value 0 (Success), fd: 15
+[npa-publisher:2025-08-21 05:23:02.630 +00:00] [info] GSLBClient.cpp:581:operator()():0x7fd186c45dc0 GSLB: pop: IN-MAA1 RTT endpoint ip 163.116.195.31 port 443: rtt => 36
+[npa-publisher:2025-08-21 05:23:02.641 +00:00] [info] socket_tools.cpp:228:connectWithTimeOut():0x0 SO_ERROR value 0 (Success), fd: 16
+[npa-publisher:2025-08-21 05:23:02.641 +00:00] [info] GSLBClient.cpp:581:operator()():0x7fd186c45dc0 GSLB: pop: IN-HYD1 RTT endpoint ip 163.116.219.45 port 443: rtt => 44
+[npa-publisher:2025-08-21 05:23:02.912 +00:00] [info] GSLBConnector.cpp:507:sendRequestInternal():0x7fd186d06200 Sent request to https://gateway.gslb.goskope.com/api/v0.2/npa/footprint/<masked> and got response: HTTP 200
+[npa-publisher:2025-08-21 05:23:02.916 +00:00] [info] GSLBClient.cpp:122:parseGSLBPOSTResult():0x7fd186c45dc0 GSLB POST Result: {"egress_ip":"119.226.50.147","request_id":"KRambe5Be1JmgHusHO1xi","scope":"npa","pops":[{"name":"IN-DEL1","npa_gateway_ip":"163.116.199.108","npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_ip":"163.116.199.141","npa_stitcher_fqdn":"stitcher.npa.goskope.com","country":"IN","in_country":true},{"name":"IN-DEL2","npa_gateway_ip":"163.116.212.89","npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_ip":"163.116.212.22","npa_stitcher_fqdn":"stitcher.npa.goskope.com","country":"IN","in_country":true},{"name":"IN-BOM2","npa_gateway_ip":"163.116.213.100","npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_ip":"163.116.213.121","npa_stitcher_fqdn":"stitcher.npa.goskope.com","country":"IN","in_country":true},{"name":"IN-MAA1","npa_gateway_ip":"163.116.195.100","npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_ip":"163.116.195.27","npa_stitcher_fqdn":"stitcher.npa.goskope.com","country":"IN","in_country":true},{"name":"IN-BOM1","npa_gateway_ip":"163.116.205.77","npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_ip":"163.116.205.162","npa_stitcher_fqdn":"stitcher.npa.goskope.com","country":"IN","in_country":true},{"name":"IN-MAA2","npa_gateway_ip":"163.116.214.78","npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_ip":"163.116.214.96","npa_stitcher_fqdn":"stitcher.npa.goskope.com","country":"IN","in_country":true},{"name":"IN-CCU1","npa_gateway_ip":"163.116.196.74","npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_ip":"163.116.196.16","npa_stitcher_fqdn":"stitcher.npa.goskope.com","country":"IN","in_country":true},{"name":"IN-HYD1","npa_gateway_ip":"163.116.219.78","npa_gateway_fqdn":"gateway.npa.goskope.com","npa_stitcher_ip":"163.116.219.91","npa_stitcher_fqdn":"stitcher.npa.goskope.com","country":"IN","in_country":true}]}
+[npa-publisher:2025-08-21 05:23:02.917 +00:00] [info] agenthandler.cpp:154:resolveByGSLB():0x7fd186c57150 Got stitcher IP via GSLB. Stitcher IP is [163.116.199.141]
+[npa-publisher:2025-08-21 05:23:02.917 +00:00] [info] sslclient.cpp:161:prepare():0x0 Connecting to 163.116.199.141:443, fd: 12
+[npa-publisher:2025-08-21 05:23:02.920 +00:00] [info] socket_tools.cpp:228:connectWithTimeOut():0x0 SO_ERROR value 0 (Success), fd: 12
+[npa-publisher:2025-08-21 05:23:02.920 +00:00] [info] sslhelper.cpp:115:newCtx():0x0 Tls Cipher list : Default
+[npa-publisher:2025-08-21 05:23:02.942 +00:00] [info] sslclient.cpp:254:connect():0x0 Establishing SSL connection to 163.116.199.141:443, timeout: 60s
+[npa-publisher:2025-08-21 05:23:02.950 +00:00] [warning] sslclient.cpp:86:verify_callback():0x0 Verified: /emailAddress=certadmin@netskope.com/CN=*.sin2.goskope.com/OU=certadmin/O=Netskope Inc./L=Singapore/ST=SG/C=SG
+
+[npa-publisher:2025-08-21 05:23:02.951 +00:00] [warning] sslclient.cpp:86:verify_callback():0x0 Verified: /emailAddress=certadmin@netskope.com/CN=ca.irissoftware-sase.goskope.com/OU=50840063fecf55e27cee0728fa722ecf/O=Iris Software Pvt/L=Noida/ST=UP/C=IN
+
+[npa-publisher:2025-08-21 05:23:02.951 +00:00] [warning] sslclient.cpp:86:verify_callback():0x0 Verified: /CN=e8574626d40b7873
+
+[npa-publisher:2025-08-21 05:23:02.969 +00:00] [info] sslclient.cpp:260:connect():0x0 Negotiated ECDHE-RSA-AES256-GCM-SHA384
+[npa-publisher:2025-08-21 05:23:02.970 +00:00] [info] eventlogger.cpp:25:log():0x7f1aa8 {"eventId": "NPACONNECTED", "publisherId": "f4554aebb0b568e0", "stitcherIp": "163.116.199.141", "tenant": "ns-24063"}
+[npa-publisher:2025-08-21 05:23:04.949 +00:00] [warning] tcpserver.cpp:105:handleRx():0x7fd186c57000 Accept conn from port 55374 socket fd 11
+[npa-publisher:2025-08-21 05:23:04.949 +00:00] [info] httpserver.cpp:183:operator()():0x7fd186c57000 Accepted connection from 127.0.0.1:55374
+[npa-publisher:2025-08-21 05:23:04.949 +00:00] [info] httpserver.cpp:36:on_message_complete():0x0 on_message_complete
+
+[npa-publisher:2025-08-21 05:23:04.949 +00:00] [info] httpserver.cpp:84:rxHandler():0x7fd184e2ab00 Recvd 111, parsed 111, content_length 18446744073709551615, errno 0, http_resultHPE_OK
+[npa-publisher:2025-08-21 05:23:04.949 +00:00] [info] tcpclient.cpp:526:shutdown():0x7fd186d6ef00 Shutdown socket fd 11
+[npa-publisher:2025-08-21 05:23:04.949 +00:00] [info] tcpclient.cpp:195:handleClose():0x7fd186d6ef00 Closing socket m_fd 11 fd 11
+[npa-publisher:2025-08-21 05:23:04.953 +00:00] [warning] tcpserver.cpp:105:handleRx():0x7fd186c57000 Accept conn from port 55388 socket fd 11
+[npa-publisher:2025-08-21 05:23:04.953 +00:00] [info] httpserver.cpp:183:operator()():0x7fd186c57000 Accepted connection from 127.0.0.1:55388
+[npa-publisher:2025-08-21 05:23:04.953 +00:00] [info] httpserver.cpp:36:on_message_complete():0x0 on_message_complete
+
+[npa-publisher:2025-08-21 05:23:04.953 +00:00] [info] httpserver.cpp:84:rxHandler():0x7fd184e2ab00 Recvd 111, parsed 111, content_length 18446744073709551615, errno 0, http_resultHPE_OK
+[npa-publisher:2025-08-21 05:23:04.953 +00:00] [info] tcpclient.cpp:526:shutdown():0x7fd186d6ef00 Shutdown socket fd 11
+[npa-publisher:2025-08-21 05:23:04.953 +00:00] [info] tcpclient.cpp:195:handleClose():0x7fd186d6ef00 Closing socket m_fd 11 fd 11
+[npa-publisher:2025-08-21 05:23:04.955 +00:00] [warning] tcpserver.cpp:105:handleRx():0x7fd186c57000 Accept conn from port 55400 socket fd 11
+[npa-publisher:2025-08-21 05:23:04.955 +00:00] [info] httpserver.cpp:183:operator()():0x7fd186c57000 Accepted connection from 127.0.0.1:55400
+[npa-publisher:2025-08-21 05:23:04.955 +00:00] [info] httpserver.cpp:36:on_message_complete():0x0 on_message_complete
+
+[npa-publisher:2025-08-21 05:23:04.955 +00:00] [info] httpserver.cpp:84:rxHandler():0x7fd184e2ab00 Recvd 103, parsed 103, content_length 18446744073709551615, errno 0, http_resultHPE_OK
+[npa-publisher:2025-08-21 05:23:04.955 +00:00] [info] tcpclient.cpp:526:shutdown():0x7fd186d6ef00 Shutdown socket fd 11
+[npa-publisher:2025-08-21 05:23:04.955 +00:00] [info] tcpclient.cpp:195:handleClose():0x7fd186d6ef00 Closing socket m_fd 11 fd 11
+[npa-publisher:2025-08-21 05:24:00.513 +00:00] [info] sslhandler.cpp:48:operator()():0x7fd186c37500 SSL channel stats: m_rxBytes 528, m_txBytes 1769, rx: 0.00 Kb/s tx: 0.00 Kb/s, freeSpace:8192
+[npa-publisher:2025-08-21 05:24:00.532 +00:00] [info] agenthandler.cpp:559:handleTimer():0x7fd186c37500 Cleaning up closed channels
+[npa-publisher:2025-08-21 05:25:00.513 +00:00] [info] sslhandler.cpp:48:operator()():0x7fd186c37500 SSL channel stats: m_rxBytes 1103, m_txBytes 2344, rx: 0.00 Kb/s tx: 0.00 Kb/s, freeSpace:8192
+[npa-publisher:2025-08-21 05:25:00.532 +00:00] [info] agenthandler.cpp:559:handleTimer():0x7fd186c37500 Cleaning up closed channels
+[npa-publisher:2025-08-21 05:26:00.514 +00:00] [info] sslhandler.cpp:48:operator()():0x7fd186c37500 SSL channel stats: m_rxBytes 1678, m_txBytes 2919, rx: 0.00 Kb/s tx: 0.00 Kb/s, freeSpace:8192
+[npa-publisher:2025-08-21 05:26:00.532 +00:00] [info] agenthandler.cpp:559:handleTimer():0x7fd186c37500 Cleaning up closed channels
+[npa-publisher:2025-08-21 05:27:00.514 +00:00] [info] sslhandler.cpp:48:operator()():0x7fd186c37500 SSL channel stats: m_rxBytes 2253, m_txBytes 3494, rx: 0.00 Kb/s tx: 0.00 Kb/s, freeSpace:8192
+[npa-publisher:2025-08-21 05:27:00.532 +00:00] [info] agenthandler.cpp:559:handleTimer():0x7fd186c37500 Cleaning up closed channels
